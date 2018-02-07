@@ -15,6 +15,7 @@
 		D9707218201D694E00967866 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9707216201D694E00967866 /* LaunchScreen.storyboard */; };
 		D9707223201D694E00967866 /* Simple_CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9707222201D694E00967866 /* Simple_CalculatorTests.swift */; };
 		D970722F201D7AB400967866 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D970722E201D7AB400967866 /* QuartzCore.framework */; };
+		D9707248202B2AD300967866 /* MathParser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9707249202B2AD300967866 /* MathParser.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		D9707222201D694E00967866 /* Simple_CalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Simple_CalculatorTests.swift; sourceTree = "<group>"; };
 		D9707224201D694E00967866 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D970722E201D7AB400967866 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		D9707247202B2A6E00967866 /* MathParser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MathParser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9707249202B2AD300967866 /* MathParser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MathParser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9707248202B2AD300967866 /* MathParser.framework in Frameworks */,
 				D970722F201D7AB400967866 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -106,6 +110,8 @@
 		D970722D201D7AB400967866 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D9707249202B2AD300967866 /* MathParser.framework */,
+				D9707247202B2A6E00967866 /* MathParser.framework */,
 				D970722E201D7AB400967866 /* QuartzCore.framework */,
 			);
 			name = Frameworks;

@@ -7,9 +7,11 @@
 //
 
 import UIKit
+import MathParser
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var l_output: UILabel!
     @IBOutlet weak var btn_ac: UIButton!
     @IBOutlet weak var btn_posneg: UIButton!
     @IBOutlet weak var btn_percent: UIButton!
@@ -29,9 +31,50 @@ class ViewController: UIViewController {
     @IBOutlet weak var btn_8: UIButton!
     @IBOutlet weak var btn_9: UIButton!
     @IBOutlet weak var btn_period: UIButton!
+    var expression: String = "0"
     
-    @IBAction func buttonPressed(_ Sender: UIButton) {
+    @IBAction func buttonPressed(_ sender: UIButton) {
         
+        var done: Bool = false
+        
+        /* Using the ASCII value from the tag, convert to the proper character for parsing
+        and format the input string accordingly */
+        
+        // Reset the input string if AC pressed
+        if sender.tag == 0 {
+            expression = "0"
+        }
+        // Negate the input if +/- pressed
+        else if sender.tag == 33 {
+            expression = "-(" + expression + ")"
+        }
+        // Done calculating when = is pressed and don't pass it to input string
+        else if sender.tag == 61 {
+            done = !done
+        }
+        // Append all other button values to the input string
+        else {
+            expression.append(String(UnicodeScalar(UInt8(sender.tag.description)!)))
+        }
+        
+        // Don't try to create an incomplete expression (i.e 8*, 9+, 5/, etc.)
+        if CharacterSet.decimalDigits.contains(sender.titleLabel!.text!.unicodeScalars.first!) || sender.tag == 0 || sender.tag == 33 || sender.tag == 61 {
+
+            do {
+                
+            // Evaluate and display the expression
+            l_output.text! = String(try expression.evaluate())
+            
+            }
+            catch {
+                expression = "0"
+                l_output.text! = "ERROR"
+            }
+        }
+        
+        if done {
+            expression = l_output.text!
+        }
     }
     
     override func viewDidLoad() {
