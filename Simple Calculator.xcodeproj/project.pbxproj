@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D9031626202B32AA000DBEE8 /* DDMathParser-master in Sources */ = {isa = PBXBuildFile; fileRef = D9031625202B32AA000DBEE8 /* DDMathParser-master */; };
+		D9031628202B32D8000DBEE8 /* MathParser in Frameworks */ = {isa = PBXBuildFile; fileRef = D9031627202B32D8000DBEE8 /* MathParser */; };
 		D970720B201D694E00967866 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D970720A201D694E00967866 /* AppDelegate.swift */; };
 		D970720D201D694E00967866 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D970720C201D694E00967866 /* ViewController.swift */; };
 		D9707210201D694E00967866 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D970720E201D694E00967866 /* Main.storyboard */; };
@@ -15,7 +17,6 @@
 		D9707218201D694E00967866 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9707216201D694E00967866 /* LaunchScreen.storyboard */; };
 		D9707223201D694E00967866 /* Simple_CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9707222201D694E00967866 /* Simple_CalculatorTests.swift */; };
 		D970722F201D7AB400967866 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D970722E201D7AB400967866 /* QuartzCore.framework */; };
-		D9707248202B2AD300967866 /* MathParser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9707249202B2AD300967866 /* MathParser.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D9031625202B32AA000DBEE8 /* DDMathParser-master */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "DDMathParser-master"; sourceTree = "<group>"; };
+		D9031627202B32D8000DBEE8 /* MathParser */ = {isa = PBXFileReference; lastKnownFileType = folder; name = MathParser; path = "DDMathParser-master/MathParser"; sourceTree = "<group>"; };
 		D9707207201D694E00967866 /* Simple Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Simple Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D970720A201D694E00967866 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D970720C201D694E00967866 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -41,8 +44,6 @@
 		D9707222201D694E00967866 /* Simple_CalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Simple_CalculatorTests.swift; sourceTree = "<group>"; };
 		D9707224201D694E00967866 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D970722E201D7AB400967866 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		D9707247202B2A6E00967866 /* MathParser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MathParser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D9707249202B2AD300967866 /* MathParser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MathParser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,7 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D9707248202B2AD300967866 /* MathParser.framework in Frameworks */,
+				D9031628202B32D8000DBEE8 /* MathParser in Frameworks */,
 				D970722F201D7AB400967866 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -68,6 +69,7 @@
 		D97071FE201D694E00967866 = {
 			isa = PBXGroup;
 			children = (
+				D9031625202B32AA000DBEE8 /* DDMathParser-master */,
 				D9707209201D694E00967866 /* Simple Calculator */,
 				D9707221201D694E00967866 /* Simple CalculatorTests */,
 				D9707208201D694E00967866 /* Products */,
@@ -110,8 +112,7 @@
 		D970722D201D7AB400967866 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D9707249202B2AD300967866 /* MathParser.framework */,
-				D9707247202B2A6E00967866 /* MathParser.framework */,
+				D9031627202B32D8000DBEE8 /* MathParser */,
 				D970722E201D7AB400967866 /* QuartzCore.framework */,
 			);
 			name = Frameworks;
@@ -220,6 +221,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9031626202B32AA000DBEE8 /* DDMathParser-master in Sources */,
 				D970720D201D694E00967866 /* ViewController.swift in Sources */,
 				D9707213201D694E00967866 /* Simple_Calculator.xcdatamodeld in Sources */,
 				D970720B201D694E00967866 /* AppDelegate.swift in Sources */,
